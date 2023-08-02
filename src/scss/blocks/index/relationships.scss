@@ -1,0 +1,54 @@
+.relationships {
+}
+.relationships__container {
+  padding-top: 16rem;
+  padding-bottom: 10rem;
+}
+.relationships__title {
+  font-family: 'Inter';
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: calc(67 / 56 * 100%);
+  letter-spacing: -2px;
+  max-width: 601px;
+  margin-bottom: 2.4rem;
+}
+.relationships__subtitle {
+  @extend %heading_6;
+  font-weight: 500;
+  color: rgba(126, 132, 146, 1);
+  max-width: 462px;
+  margin-bottom: 8rem;
+}
+.relationships__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5.6rem 6.4rem;
+}
+.relationships__item {
+  display: flex;
+  flex-basis: 568px;
+  gap: 6rem;
+  align-items: center;
+}
+.relationships__img-block {
+  max-height: 273px;
+  max-width: 240px;
+}
+.relationships__img {
+  object-fit: cover;
+  object-position: center;
+}
+.relationships__text-column {
+  flex-basis: 286px;
+}
+.relationships__item-title {
+  @extend %heading_4;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+}
+.relationships__item-text {
+  @extend %body_large;
+  font-weight: 500;
+}

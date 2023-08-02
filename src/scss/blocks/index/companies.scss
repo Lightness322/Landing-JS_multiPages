@@ -1,0 +1,42 @@
+.companies__container {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+.companies__row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.companies__text-block {
+  flex-basis: 323px;
+}
+.companies__number {
+  font-family: 'Inter';
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: calc(67 / 56 * 100%);
+  letter-spacing: -2px;
+}
+.companies__text {
+  @extend %heading_6;
+  font-weight: 500;
+}
+.companies__companies-block {
+  flex-basis: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+}
+.companies__img-block {
+  flex-basis: 160px;
+  text-align: center;
+  &::after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.companies__img {
+  vertical-align: middle;
+}

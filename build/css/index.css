@@ -1,0 +1,983 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.footer-top__title {
+  font-family: "Inter";
+  font-size: 4.8rem;
+  line-height: 116.6666666667%;
+}
+
+.reviews__item-text {
+  font-family: "Inter";
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.relationships__item-title, .problems__item-title {
+  font-family: "Inter";
+  font-size: 3.2rem;
+  line-height: 125%;
+}
+
+.footer-top__subtitle {
+  font-family: "Inter";
+  font-size: 2.4rem;
+  line-height: 133.3333333333%;
+}
+
+.reviews__person-name, .reviews__subtitle, .relationships__subtitle, .news__subtitle, .new-heights__subtitle, .new-heights__text, .increase__options, .increase__subtitle, .companies__text {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  line-height: 144.4444444444%;
+}
+
+.footer-bottom__text, .footer-middle__column-text, .footer-middle__column-title, .footer-middle__logo-text, .header__li, .reviews__person-job, .reviews__rating-number, .relationships__item-text, .problems__item-text, .button {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.button {
+  font-weight: 700;
+  width: 175px;
+  height: 56px;
+  border: 1px solid;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  z-index: 2;
+}
+
+.line-subtitle {
+  position: relative;
+  padding-left: 100px;
+}
+.line-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  height: 1px;
+  width: 76px;
+  background-color: black;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 993px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 769px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+.companies__container {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+.companies__row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.companies__text-block {
+  flex-basis: 323px;
+}
+
+.companies__number {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+}
+
+.companies__text {
+  font-weight: 500;
+}
+
+.companies__companies-block {
+  flex-basis: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+}
+
+.companies__img-block {
+  flex-basis: 160px;
+  text-align: center;
+}
+.companies__img-block::after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+
+.companies__img {
+  vertical-align: middle;
+}
+
+.increase__container {
+  padding-top: 16rem;
+  padding-bottom: 9.4rem;
+}
+
+.increase__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 5.8rem;
+}
+
+.increase__img-block {
+  position: relative;
+  max-width: 585px;
+  max-height: 651px;
+}
+
+.increase__main-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.increase__sub-img {
+  left: 44.2735042735%;
+  bottom: 6.1443932412%;
+  position: absolute;
+  max-width: 49.5726495726%;
+  max-height: 45.7757296467%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.increase__text-block {
+  flex-basis: 557px;
+}
+
+.increase__title {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+}
+
+.increase__subtitle {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+  max-width: 360px;
+  margin-bottom: 4rem;
+}
+
+.increase__options {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 3.2rem;
+}
+
+.increase__option {
+  padding-left: 4rem;
+  max-width: 393px;
+  position: relative;
+}
+.increase__option::before {
+  content: "";
+  left: 0;
+  top: calc(50% - 10px);
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/increase__icon.svg");
+}
+
+.new-heights__container {
+  padding-top: 6.6rem;
+  padding-bottom: 16rem;
+}
+
+.new-heights__columns {
+  display: flex;
+  gap: 14.4rem;
+  margin-bottom: 8rem;
+}
+
+.new-heights__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+.new-heights__column::before {
+  content: "";
+  position: absolute;
+  left: -7.2rem;
+  background: rgb(206, 209, 216);
+  width: 0.1rem;
+  height: 9.9rem;
+}
+.new-heights__column:first-child::before {
+  content: none;
+}
+
+.new-heights__number {
+  font-family: "Inter";
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 120.3125%;
+}
+
+.new-heights__text {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+}
+
+.new-heights__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 8rem;
+}
+
+.new-heights__row {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.new-heights__title {
+  flex-basis: 772px;
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+}
+
+.new-heights__subtitle {
+  flex-basis: 421px;
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+}
+
+@media (max-width: 992px) {
+  .new-heights__columns {
+    flex-wrap: wrap;
+  }
+}
+.news__container {
+  padding-top: 6rem;
+  padding-bottom: 9.1rem;
+  text-align: center;
+}
+
+.news__title {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+}
+
+.news__subtitle {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+  margin-bottom: 8rem;
+}
+
+.news__content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.news__button-block {
+  position: absolute;
+  width: 6.6666666667%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  left: calc(50% - 40px);
+  top: 25%;
+  z-index: 12;
+}
+.news__button-block ::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.new__button-content {
+  display: relative;
+}
+
+.arrow-left {
+  position: absolute;
+  display: block;
+  height: 14px;
+  width: 14px;
+  top: calc(50% - 7px);
+  left: 25%;
+  transform: rotate(-45deg);
+  border-top: 2px solid rgb(126, 132, 146);
+  border-left: 2px solid rgb(126, 132, 146);
+}
+
+.arrow-right {
+  position: absolute;
+  display: block;
+  height: 14px;
+  width: 14px;
+  top: calc(50% - 7px);
+  right: 25%;
+  transform: rotate(45deg);
+  border-top: 2px solid rgb(126, 132, 146);
+  border-right: 2px solid rgb(126, 132, 146);
+}
+
+.news__content-slider {
+  width: 203%;
+  display: inline-flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.8916256158%;
+}
+.news__item img {
+  max-height: 329px;
+}
+
+.news__img {
+  margin-bottom: 1.6rem;
+}
+
+.news__desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+  font-family: "Inter";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(126, 132, 146);
+}
+
+.news__topic {
+  text-align: start;
+  font-family: "Inter";
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 1200px) {
+  .news__button-block {
+    left: calc(50% - 30.675px);
+    top: 22%;
+  }
+}
+@media (max-width: 992px) {
+  .news__button-block {
+    left: calc(50% - 23.295px);
+    top: 18%;
+  }
+}
+.problems {
+  background: rgb(29, 30, 37);
+}
+
+.problems__container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: white;
+}
+
+.problems__title {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -2px;
+  margin-bottom: 2.4rem;
+  max-width: 816px;
+}
+
+.problems__subtitle {
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 150%;
+  max-width: 660px;
+  margin-bottom: 8rem;
+  color: rgb(126, 132, 146);
+}
+
+.problems__row {
+  display: flex;
+  gap: 5.6rem 25.9rem;
+  flex-wrap: wrap;
+}
+
+.problems__item {
+  flex-basis: 453px;
+}
+
+.problems__icon {
+  margin-bottom: 2.9rem;
+}
+
+.problems__item-title {
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+}
+
+.problems__item-text {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+}
+
+@media (max-width: 1200px) {
+  .problems__row {
+    gap: 5.6rem 0;
+    justify-content: space-between;
+  }
+  .problems__row :nth-child(even) {
+    margin-left: auto;
+  }
+}
+@media (max-width: 375px) {
+  .problems__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .problems__title {
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+  .problems__subtitle {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .problems__row {
+    gap: 24px;
+  }
+  .problems__icon {
+    height: 18px;
+    width: 18px;
+    margin-bottom: 19px;
+  }
+  .problems__item-title {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+  .problems__item-text {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.relationships__container {
+  padding-top: 16rem;
+  padding-bottom: 10rem;
+}
+
+.relationships__title {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+  max-width: 601px;
+  margin-bottom: 2.4rem;
+}
+
+.relationships__subtitle {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+  max-width: 462px;
+  margin-bottom: 8rem;
+}
+
+.relationships__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5.6rem 6.4rem;
+}
+
+.relationships__item {
+  display: flex;
+  flex-basis: 568px;
+  gap: 6rem;
+  align-items: center;
+}
+
+.relationships__img-block {
+  max-height: 273px;
+  max-width: 240px;
+}
+
+.relationships__img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.relationships__text-column {
+  flex-basis: 286px;
+}
+
+.relationships__item-title {
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+}
+
+.relationships__item-text {
+  font-weight: 500;
+}
+
+.reviews__container {
+  padding-top: 6.9rem;
+  padding-bottom: 16rem;
+}
+
+.reviews__title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11.2rem;
+}
+
+.reviews__title {
+  font-family: "Inter";
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: 119.6428571429%;
+  letter-spacing: -2px;
+  flex-basis: 53rem;
+}
+
+.reviews__subtitle {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+  flex-basis: 37.6rem;
+}
+
+.reviews__slider-block {
+  width: 74.8333333333%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 13.0833333333%;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews__slider-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 11.6rem;
+  height: 5rem;
+  font-size: 0;
+  z-index: 12;
+}
+
+.reviews__left-button {
+  border: 1px solid rgb(206, 209, 216);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+}
+
+.reviews__right-button {
+  border: 1px solid;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.reviews__slider {
+  width: 400%;
+  display: inline-flex;
+  transition: all 0.5s;
+}
+
+.reviews__slider-item {
+  width: 25%;
+}
+
+.reviews__item-rating {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.reviews__rating-number {
+  font-weight: 500;
+}
+
+.reviews__item-text {
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 4rem;
+}
+
+.reviews__item-person {
+  display: flex;
+  gap: 2.4rem;
+  max-width: max-content;
+}
+
+.reviews__person-name {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.reviews__person-job {
+  font-weight: 500;
+  color: rgb(126, 132, 146);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.6rem;
+  padding-bottom: 2.2rem;
+}
+
+.header__nav {
+  display: flex;
+  transition: all 0.2s;
+}
+
+.header__nav.active {
+  left: 0;
+}
+
+.header__button {
+  display: none;
+  width: 16.8px;
+  height: 14.4px;
+  position: relative;
+  z-index: 11;
+}
+.header__button span {
+  transition: all 0.2s;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16.8px;
+  height: 2px;
+  background: rgb(16, 16, 16);
+}
+.header__button :first-child {
+  top: calc(50% - 1px);
+}
+.header__button :last-child {
+  width: 8.4px;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+}
+
+.header__button.active span {
+  display: none;
+}
+.header__button.active :first-child {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+.header__button.active :last-child {
+  width: 16.8px;
+  display: inline-block;
+  transform: rotate(45deg);
+  bottom: calc(50% - 1px);
+}
+
+.header__ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.header__li {
+  font-weight: 500;
+}
+
+.header__li_underline {
+  font-weight: 600;
+  line-height: 150%;
+  position: relative;
+  margin-left: 3.6rem;
+}
+.header__li_underline::after {
+  content: "";
+  left: 0;
+  bottom: -6px;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .header__button {
+    display: block;
+  }
+  .header__nav {
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(226, 248, 240);
+    overflow: auto;
+    left: -100%;
+  }
+  .header__ul {
+    margin: auto;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .header__li {
+    font-size: 1.875rem;
+  }
+  .header__li_underline {
+    margin-left: 0;
+  }
+}
+.footer__top {
+  position: relative;
+}
+
+.footer-top__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11.2rem;
+  padding-bottom: 5.2rem;
+}
+
+.footer-top__text {
+  flex-basis: 720px;
+}
+
+.footer-top__title {
+  font-weight: 600;
+  font-size: 6.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-top__subtitle {
+  max-width: 643px;
+  font-weight: 600;
+}
+
+.footer__middle {
+  padding-top: 7.6rem;
+  padding-bottom: 7.9rem;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: #ced1d8;
+}
+
+.footer-middle__logo-column {
+  flex-basis: 292px;
+}
+
+.footer-middle__logo {
+  margin-bottom: 0.4rem;
+}
+
+.footer-middle__logo-text {
+  font-weight: 500;
+}
+
+.footer-middle__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9.333rem;
+}
+
+.footer-middle__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  z-index: 10;
+}
+
+.footer-middle__column-title {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.footer-middle__column-text {
+  font-weight: 400;
+}
+
+.footer__bottom {
+  padding-top: 4.6rem;
+  padding-bottom: 5.9rem;
+}
+
+.footer-bottom__text {
+  font-weight: 400;
+  color: #afb3bb;
+  text-align: center;
+}
