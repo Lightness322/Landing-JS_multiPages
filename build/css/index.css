@@ -129,7 +129,7 @@ html {
   line-height: 120%;
 }
 
-.relationships__item-title, .problems__item-title {
+.relationships__item-title, .problems__item-title, .creative__subtitle {
   font-family: "Inter";
   font-size: 3.2rem;
   line-height: 125%;
@@ -155,8 +155,8 @@ html {
 
 .button {
   font-weight: 700;
-  width: 175px;
-  height: 56px;
+  width: 17.5rem;
+  height: 5.6rem;
   border: 1px solid;
   border-radius: 100px;
   background-color: black;
@@ -166,15 +166,15 @@ html {
 
 .line-subtitle {
   position: relative;
-  padding-left: 100px;
+  padding-left: 10rem;
 }
 .line-subtitle::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 2rem;
   height: 1px;
-  width: 76px;
+  width: 7.6rem;
   background-color: black;
 }
 
@@ -190,7 +190,7 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 .companies__container {
@@ -242,6 +242,192 @@ html {
   vertical-align: middle;
 }
 
+.creative__container {
+  padding-top: 8.7rem;
+  padding-bottom: 14.1rem;
+}
+
+.creative__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 9.7rem;
+  flex-wrap: wrap;
+}
+
+.creative__text-column {
+  flex-basis: 61.7rem;
+}
+
+.creative__title {
+  font-family: "Inter";
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -3px;
+  margin-bottom: 11.4rem;
+}
+
+.creative__subtitle {
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 6.9rem;
+}
+
+.creative__input-block {
+  display: flex;
+}
+
+.creative__input {
+  border-bottom: 1px solid rgb(206, 209, 216);
+  width: 28rem;
+  font-family: "Inter";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgb(126, 132, 146);
+}
+
+.creative__img-column {
+  flex-grow: 1;
+}
+
+.creative__images {
+  position: relative;
+  margin-bottom: 2.875rem;
+  max-width: 48.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creative__main-item {
+  background: rgb(255, 255, 255);
+  width: 86.2139917695%;
+  padding: 1.8rem;
+  box-shadow: 20px 40px 80px 0px rgba(89, 96, 135, 0.12);
+}
+
+.creative__main-title {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
+}
+
+.creative__main-img {
+  display: block;
+}
+
+.creative__sub-item {
+  background: rgb(255, 255, 255);
+  top: -5rem;
+  right: 0;
+  padding: 1.8rem;
+  position: absolute;
+  width: 44.0082644628%;
+  left: 70.041322314%;
+  box-shadow: 20px 40px 80px 0px rgba(45, 51, 81, 0.12);
+}
+
+.creative__sub-title {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
+}
+
+.creative__statistic {
+  padding: 2rem 2.8rem;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  width: 86.2139917695%;
+  max-width: 48.6rem;
+}
+
+.creative__statistic-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creative__statistic-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.creative__statistic-title {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 142.8571428571%;
+  color: rgb(92, 97, 111);
+  margin-bottom: 0.4rem;
+}
+
+.creative__statistic-price {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.creative__statistic-up {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 142.8571428571%;
+  color: rgb(96, 211, 156);
+}
+
+.creative__statistic-down {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 142.8571428571%;
+  color: rgb(227, 84, 84);
+}
+
+.creative__statistic-time {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 157.1428571429%;
+  letter-spacing: -0.5px;
+  color: rgb(92, 97, 110);
+}
+
+@media (max-width: 1200px) {
+  .creative__statistic {
+    margin-left: 24.5015739769%;
+    max-width: 41.9rem;
+  }
+  .creative__text-column {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .creative__statistic {
+    margin-left: 16.6666666667%;
+  }
+}
+@media (max-width: 768px) {
+  .creative__statistic {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 514px) {
+  .creative__images {
+    overflow: scroll;
+    max-width: 100%;
+  }
+  .creative__sub-item {
+    top: 0;
+  }
+}
 .increase__container {
   padding-top: 16rem;
   padding-bottom: 9.4rem;

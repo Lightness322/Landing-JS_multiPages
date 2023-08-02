@@ -55,8 +55,8 @@ html {
 .button {
   @extend %body_large;
   font-weight: 700;
-  width: 175px;
-  height: 56px;
+  width: 17.5rem;
+  height: 5.6rem;
   border: 1px solid;
   border-radius: 100px;
   background-color: black;
@@ -66,14 +66,14 @@ html {
 
 .line-subtitle {
   position: relative;
-  padding-left: 100px;
+  padding-left: 10rem;
   &::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 20px;
+    top: 2rem;
     height: 1px;
-    width: 76px;
+    width: 7.6rem;
     background-color: black;
   }
 }
@@ -90,6 +90,6 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
