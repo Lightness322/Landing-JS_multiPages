@@ -1,29 +1,31 @@
+.footer {
+}
 .footer__top {
   position: relative;
-  // &::before {
-  //   content: '';
-  //   background-image: url('../img/orange.png');
-  //   position: absolute;
-  //   width: 772px;
-  //   height: 772px;
-  //   left: 0;
-  //   top: 0;
-  //   background-size: cover;
-  //   background-position: center bottom;
-  //   background-repeat: no-repeat;
-  // }
-  // &::after {
-  //   content: '';
-  //   background-image: url('../img/blue.png');
-  //   position: absolute;
-  //   width: 525px;
-  //   height: 525px;
-  //   right: 0;
-  //   top: 125px;
-  //   background-size: contain;
-  //   background-position: right;
-  //   background-repeat: no-repeat;
-  // }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6.9rem;
+    height: 62.1rem;
+    width: 62.1rem;
+    border-radius: 100%;
+    background: rgba(250, 117, 21, 1);
+    opacity: 13%;
+    filter: blur(80px);
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12.5rem;
+    right: -38.25rem;
+    height: 52.5rem;
+    width: 52.5rem;
+    border-radius: 100%;
+    background: rgba(226, 248, 240, 0.7);
+    filter: blur(80px);
+  }
 }
 .footer-top {
 }

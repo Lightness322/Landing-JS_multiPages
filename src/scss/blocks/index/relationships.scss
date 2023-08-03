@@ -52,3 +52,7 @@
   @extend %body_large;
   font-weight: 500;
 }
+@media (max-width: 375px) {
+  .relationships__container {
+  }
+}

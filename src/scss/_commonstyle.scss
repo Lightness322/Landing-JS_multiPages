@@ -1,6 +1,9 @@
 html {
   font-size: 62.5%;
 }
+.wrapper {
+  overflow: hidden;
+}
 .container {
   max-width: 1240px;
   padding: 0 20px;
@@ -91,5 +94,32 @@ html {
 @media (max-width: 768px) {
   html {
     font-size: 56.25%;
+  }
+  .line-subtitle {
+    position: relative;
+    &::before {
+      content: '';
+      width: 7.6rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .line-subtitle {
+    position: relative;
+    padding-left: 32px;
+    &::before {
+      content: '';
+      width: 24px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .button {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 108px;
+    height: 36px;
   }
 }

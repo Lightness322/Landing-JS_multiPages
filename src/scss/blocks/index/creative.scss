@@ -1,3 +1,6 @@
+.footer {
+  overflow: hidden;
+}
 .creative__container {
   padding-top: 8.7rem;
   padding-bottom: 14.1rem;
@@ -7,7 +10,34 @@
   justify-content: space-between;
   gap: 9.7rem;
   flex-wrap: wrap;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7.4rem;
+    height: 55.1rem;
+    width: 55.1rem;
+    border-radius: 100%;
+    background: rgba(250, 117, 21, 1);
+    opacity: 13%;
+    filter: blur(70px);
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8rem;
+    right: -16.4rem;
+    height: 52.5rem;
+    width: 52.5rem;
+    border-radius: 100%;
+    background: rgba(226, 248, 240, 1);
+    z-index: -1;
+    filter: blur(70px);
+  }
 }
+
 .creative__text-column {
   flex-basis: 61.7rem;
 }
@@ -27,6 +57,7 @@
 }
 .creative__input-block {
   display: flex;
+  gap: 1.6rem;
 }
 .creative__input {
   border-bottom: 1px solid rgba(206, 209, 216, 1);
@@ -123,6 +154,19 @@
   font-weight: 600;
   line-height: calc(20 / 14 * 100%);
   color: rgba(96, 211, 156, 1);
+  padding-left: 1.6rem;
+  position: relative;
+  &::before {
+    content: '';
+    height: 100%;
+    width: 1.2rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url('../img/icons/creative__statistic-up.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .creative__statistic-down {
   font-family: 'Inter';
@@ -130,6 +174,19 @@
   font-weight: 600;
   line-height: calc(20 / 14 * 100%);
   color: rgba(227, 84, 84, 1);
+  padding-left: 1.6rem;
+  position: relative;
+  &::before {
+    content: '';
+    height: 100%;
+    width: 1.2rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url('../img/icons/creative__statistic-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .creative__statistic-time {
   font-family: 'Inter';
@@ -158,6 +215,18 @@
   .creative__statistic {
     margin: 0 auto;
   }
+  .creative__row {
+    &::before {
+      content: '';
+      height: 40rem;
+      width: 40rem;
+    }
+    &::after {
+      content: '';
+      height: 35rem;
+      width: 35rem;
+    }
+  }
 }
 @media (max-width: 514px) {
   .creative__images {
@@ -166,5 +235,110 @@
   }
   .creative__sub-item {
     top: 0;
+  }
+  .creative__input-block {
+    gap: 1rem;
+  }
+  .creative__input {
+    max-width: 219px;
+  }
+}
+@media (max-width: 576px) {
+  .creative__text-column {
+    max-width: 100%;
+  }
+  .creative__title {
+    font-size: 6rem;
+  }
+  .creative__subtitle {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 425px) {
+  .creative__title {
+    font-size: 5rem;
+  }
+  .creative__subtitle {
+    font-size: 2.2rem;
+  }
+  .creative__statistic {
+    width: 100%;
+  }
+}
+@media (max-width: 381px) {
+  .creative__sub-title {
+    font-size: 9px;
+    line-height: 17px;
+    letter-spacing: -0.277752161026001px;
+  }
+  .creative__main-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.401169091463089px;
+  }
+}
+
+@media (max-width: 375px) {
+  .creative__row {
+    gap: 56px;
+    &::before {
+      content: '';
+      top: -97px;
+      left: -71px;
+      height: 228px;
+      width: 228px;
+    }
+    &::after {
+      content: '';
+      top: 95px;
+      right: -117px;
+      height: 197px;
+      width: 197px;
+    }
+  }
+  .creative__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+  .creative__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .creative__container {
+    padding-top: 32px;
+    padding-bottom: 56.25px;
+  }
+  .creative__input-block {
+  }
+  .creative__input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .creative__images {
+    margin-bottom: 24px;
+  }
+  .creative__statistic-title {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 2.23px;
+  }
+  .creative__statistic-price {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5.45px;
+  }
+  .creative__statistic-persent {
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: -0.40086451172828674px;
+  }
+  .creative__statistic-up {
+    margin-right: 6px;
+  }
+  .creative__statistic-down {
+    margin-right: 6px;
   }
 }
