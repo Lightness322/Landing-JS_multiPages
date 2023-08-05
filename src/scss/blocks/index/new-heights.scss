@@ -3,6 +3,7 @@
 .new-heights__container {
   padding-top: 6.6rem;
   padding-bottom: 16rem;
+  overflow: hidden;
 }
 .new-heights__columns {
   display: flex;
@@ -66,9 +67,62 @@
 @media (max-width: 992px) {
   .new-heights__columns {
     flex-wrap: wrap;
+    row-gap: 6rem;
   }
   .new-heights__row {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .new-heights__number {
+    font-size: 4.8rem;
+  }
+  .new-heights__text {
+    font-size: 1.6rem;
+  }
+  .new-heights__title {
+    font-size: 4.8rem;
+  }
+  .new-heights__subtitle {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 489px) {
+  .new-heights__columns {
+    column-gap: 3rem;
+  }
+  .new-heights__column {
+    &::before {
+      left: -3rem;
+    }
+  }
+}
+@media (max-width: 433px) {
+  .new-heights__columns {
+    column-gap: 2rem;
+  }
+  .new-heights__column {
+    &::before {
+      left: -2.4rem;
+    }
+  }
+  .new-heights__title {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 403px) {
+  .new-heights__columns {
+    column-gap: 1.5rem;
+  }
+  .new-heights__column {
+    &::before {
+      left: -1.5rem;
+    }
+  }
+  .new-heights__column {
+    &:nth-child(3)::before {
+      display: none;
+    }
   }
 }
 
@@ -124,5 +178,20 @@
   }
   .new-heights__row {
     gap: 16px;
+  }
+}
+@media (max-width: 374px) {
+  .new-heights__column {
+    flex-direction: row;
+    align-items: center;
+    &:nth-child(odd) {
+      max-width: none;
+    }
+    &:nth-child(even) {
+      max-width: none;
+    }
+    &::before {
+      display: none;
+    }
   }
 }

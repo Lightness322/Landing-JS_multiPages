@@ -1,14 +1,15 @@
 .companies__container {
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
+  border-top: 1px solid rgba(237, 237, 237, 1);
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
 }
 .companies__row {
   display: flex;
-  justify-content: center;
   gap: 3rem;
 }
 .companies__text-block {
-  flex-basis: 323px;
+  flex-basis: calc(323 / 1200 * 100%);
 }
 .companies__number {
   font-family: 'Inter';
@@ -27,7 +28,7 @@
   flex-basis: 730px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 3rem;
+  justify-content: space-between;
 }
 .companies__img-block {
   flex-basis: 160px;
@@ -44,8 +45,40 @@
 }
 
 @media (max-width: 992px) {
+  .companies__companies-block {
+    flex-basis: 100%;
+  }
+  .companies__img-block:nth-child(7) {
+    flex-grow: 1;
+  }
+  .companies__img-block:nth-child(8) {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 676px) {
+  .companies__companies-block {
+    justify-content: space-around;
+    row-gap: 3rem;
+  }
+  .companies__img-block:nth-child(7) {
+    flex-grow: 0;
+  }
+  .companies__img-block:nth-child(8) {
+    flex-grow: 0;
+  }
+}
+@media (max-width: 511px) {
   .companies__row {
     flex-wrap: wrap;
+  }
+  .companies__text-block {
+    flex-grow: 1;
+  }
+  .companies__number {
+    font-size: 4.8rem;
+  }
+  .companies__text {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 375px) {
@@ -68,7 +101,7 @@
     letter-spacing: 0px;
   }
   .companies__companies-block {
-    justify-content: center;
+    justify-content: space-around;
   }
   .companies__img-block {
     flex-basis: 124px;

@@ -23,12 +23,13 @@
 .relationships__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 5.6rem 6.4rem;
+  gap: 5.6rem 0;
+  justify-content: space-between;
 }
 .relationships__item {
   display: flex;
   flex-basis: 568px;
-  gap: 6rem;
+  justify-content: space-between;
   align-items: center;
 }
 .relationships__img-block {
@@ -51,8 +52,96 @@
 .relationships__item-text {
   @extend %body_large;
   font-weight: 500;
+  color: rgba(126, 132, 146, 1);
+}
+@media (max-width: 1200px) {
+  .relationships__item {
+    flex-grow: 1;
+    column-gap: 4rem;
+  }
+  .relationships__text-column {
+    flex-grow: 1;
+  }
+  .relationships__img-block {
+    min-width: 160px;
+    img {
+      min-height: 216px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .relationships__title {
+    font-size: 4.8rem;
+  }
+  .relationships__item-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 482px) {
+  .relationships__item {
+    column-gap: 2rem;
+  }
+  .relationships__title {
+    font-size: 4.2rem;
+  }
+  .relationships__subtitle {
+    font-size: 1.7rem;
+  }
+  .relationships__item-title {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 441px) {
+  .relationships__item {
+    column-gap: 2rem;
+  }
+  .relationships__title {
+    font-size: 4rem;
+  }
+  .relationships__subtitle {
+    font-size: 1.6rem;
+  }
+  .relationships__item-title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .relationships__item-text {
+  }
 }
 @media (max-width: 375px) {
   .relationships__container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .relationships__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+  .relationships__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .relationships__item-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .relationships__item-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .relationships__img {
+    max-width: 150px;
+  }
+  .relationships__item {
+    gap: 0.5rem;
   }
 }

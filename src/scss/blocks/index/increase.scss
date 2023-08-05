@@ -70,6 +70,11 @@
     background-image: url('../img/icons/increase__icon.svg');
   }
 }
+@media (max-width: 476px) {
+  .increase__title {
+    font-size: 4.5rem;
+  }
+}
 @media (max-width: 375px) {
   .increase__container {
     padding-top: 56px;

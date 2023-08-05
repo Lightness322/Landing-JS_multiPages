@@ -57,6 +57,19 @@
     }
   }
 }
+@media (max-width: 588px) {
+  .problems__title {
+    font-size: 4.6rem;
+  }
+}
+@media (max-width: 405px) {
+  .problems__title {
+    font-size: 3.8rem;
+  }
+  .problems__item-title {
+    font-size: 2.8rem;
+  }
+}
 @media (max-width: 375px) {
   .problems__container {
     padding-top: 40px;
