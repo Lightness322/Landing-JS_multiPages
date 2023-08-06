@@ -348,6 +348,10 @@
   .creative__statistic-row {
     gap: calc(30 / 335 * 100%);
   }
+  .creative__input {
+    flex: 1 1 auto;
+    width: 0;
+  }
 }
 @media (max-width: 359px) {
   .creative__statistic-time {

@@ -62,7 +62,6 @@ newsRightArrow.addEventListener('click', () => {
 let reviewsCoor
 
 reviewsLeftArrow.addEventListener('click', () => {
-  console.log(1)
   let itemWidth = getComputedStyle(reviewsItem).width
   let move = parseInt(itemWidth)
 
