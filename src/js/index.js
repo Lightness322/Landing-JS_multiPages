@@ -1,7 +1,3 @@
-const headerButton = document.querySelector('.header__button')
-const headerNav = document.querySelector('.header__nav')
-const body = document.body
-
 const newsLeftArrow = document.querySelector('.news__arrow-left')
 const newsRightArrow = document.querySelector('.news__arrow-right')
 const newsItem = document.querySelector('.news__item')
@@ -14,12 +10,6 @@ const reviewsRightArrow = document.querySelector('.reviews__right-button')
 const reviewsItem = document.querySelector('.reviews__slider-item')
 const reviewsSlider = document.querySelector('.reviews__slider')
 const reviewsContent = document.querySelector('.reviews__slider-block')
-
-headerButton.addEventListener('click', () => {
-  headerButton.classList.toggle('active')
-  headerNav.classList.toggle('active')
-  body.classList.toggle('lock')
-})
 
 let newsCoor
 

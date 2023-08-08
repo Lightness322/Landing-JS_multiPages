@@ -1,0 +1,101 @@
+.about-main__container {
+  padding-top: 10.5rem;
+  padding-bottom: 16.5rem;
+}
+.container {
+}
+.about-main__title {
+  font-family: 'Inter';
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: calc(86 / 72 * 100%);
+  letter-spacing: -3px;
+  margin-bottom: 11.8rem;
+  max-width: calc(959 / 1200 * 100%);
+}
+.about-main__subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13.5rem;
+}
+.about-main__subtitle {
+  font-family: 'Inter';
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: calc(42 / 32 * 100%);
+  letter-spacing: -1px;
+  max-width: calc(838 / 1200 * 100%);
+}
+.line-subtitle {
+}
+.about-main__button {
+}
+.about-main__button-link {
+}
+.about-main__content {
+  overflow: auto;
+}
+.about-main__slider {
+  display: flex;
+  gap: calc(32 / 1570 * 100%);
+  justify-content: space-between;
+  width: calc(1570 / 1200 * 100%);
+  overflow-x: scroll;
+  position: relative;
+}
+.about-main__drag-block {
+  position: absolute;
+  width: calc(100 / 1570 * 100%);
+  padding-bottom: calc(100 / 1570 * 100%);
+  border-radius: 100%;
+  left: calc(464 / 1570 * 100%);
+  top: 10rem;
+  background: rgba(255, 255, 255, 1);
+  img {
+    width: calc(28 / 100 * 100%);
+    top: 41%;
+    left: 36%;
+    position: absolute;
+  }
+}
+.about-main__arrow-left {
+}
+.about-main__arrow-right {
+}
+.about-main__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(502 / 1570 * 100%);
+  img {
+    margin-bottom: 2.4rem;
+  }
+}
+.about-main__img2 {
+  margin-bottom: 2.4rem;
+}
+.about-main__item-title {
+  font-family: 'Inter';
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: calc(48 / 32 * 100%);
+}
+.about-main__item-text {
+  font-family: 'Inter';
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: calc(32 / 18 * 100%);
+  color: rgba(126, 132, 146, 1);
+  margin-bottom: 3.2rem;
+}
+.about-main__item-button {
+  font-family: 'Inter';
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: calc(24 / 16 * 100%);
+  padding: 16px 34px;
+  background: rgba(29, 30, 37, 1);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 175px;
+}

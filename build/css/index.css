@@ -111,6 +111,10 @@ html {
   font-size: 62.5%;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .wrapper {
   overflow: hidden;
 }
