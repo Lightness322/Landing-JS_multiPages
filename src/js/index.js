@@ -1,15 +1,15 @@
 const newsLeftArrow = document.querySelector('.news__arrow-left')
 const newsRightArrow = document.querySelector('.news__arrow-right')
 const newsItem = document.querySelector('.news__item')
-const newsSlider = document.querySelector('.news__content-slider')
 const newsContent = document.querySelector('.news__content')
+const newsSlider = document.querySelector('.news__content-slider')
 const newsContainer = document.querySelector('.news__container')
 
 const reviewsLeftArrow = document.querySelector('.reviews__left-button')
 const reviewsRightArrow = document.querySelector('.reviews__right-button')
 const reviewsItem = document.querySelector('.reviews__slider-item')
-const reviewsSlider = document.querySelector('.reviews__slider')
 const reviewsContent = document.querySelector('.reviews__slider-block')
+const reviewsSlider = document.querySelector('.reviews__slider')
 
 let newsCoor
 
