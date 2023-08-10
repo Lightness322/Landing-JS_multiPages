@@ -49,6 +49,9 @@
   transform: rotate(-45deg);
   border-top: 2px solid rgba(126, 132, 146, 1);
   border-left: 2px solid rgba(126, 132, 146, 1);
+  &:hover {
+    transform: rotate(-45deg);
+  }
 }
 .arrow-right {
   position: absolute;
@@ -60,6 +63,9 @@
   transform: rotate(45deg);
   border-top: 2px solid rgba(126, 132, 146, 1);
   border-right: 2px solid rgba(126, 132, 146, 1);
+  &:hover {
+    transform: rotate(45deg);
+  }
 }
 .news__content-slider {
   width: calc(2436 / 1200 * 100%);

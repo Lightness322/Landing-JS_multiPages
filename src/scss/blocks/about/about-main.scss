@@ -67,9 +67,6 @@
   display: flex;
   flex-direction: column;
   width: calc(502 / 1570 * 100%);
-  img {
-    margin-bottom: 2.4rem;
-  }
 }
 .about-main__img2 {
   margin-bottom: 2.4rem;
@@ -98,4 +95,112 @@
   border-radius: 100px;
   color: rgba(255, 255, 255, 1);
   max-width: 175px;
+}
+@media (max-width: 992px) {
+  .about-main__img2 {
+    margin-bottom: 0.5rem;
+  }
+  .about-main__item-title {
+    font-size: 3rem;
+  }
+  .about-main__item-text {
+    font-size: 1.6rem;
+  }
+  .about-main__item-text {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-main__item:nth-child(2) {
+    display: none;
+  }
+  .about-main__item:nth-child(4) {
+    display: none;
+  }
+  .about-main__drag-block {
+    display: none;
+  }
+  .about-main__slider {
+    width: 100%;
+  }
+  .about-main__item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+@media (max-width: 708px) {
+  .about-main__title {
+    font-size: 5.8rem;
+    max-width: 100%;
+  }
+  .about-main__subtitle-row {
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  }
+  .about-main__subtitle {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .about-main__button {
+    flex: 1 1 100%;
+    text-align: end;
+  }
+}
+@media (max-width: 510px) {
+  .about-main__title {
+    font-size: 4.5rem;
+  }
+  .about-main__subtitle {
+    font-size: 2.4rem;
+  }
+  .about-main__button-link {
+    img {
+      width: 100px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .about-main__container {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+  .about-main__title {
+    font-size: 32px;
+    line-height: calc(40 / 32 * 100%);
+    letter-spacing: -1px;
+    margin-bottom: 48px;
+  }
+  .about-main__subtitle {
+    font-size: 16px;
+    line-height: calc(24 / 16 * 100%);
+    letter-spacing: 0px;
+  }
+  .about-main__button-link {
+    img {
+      width: 69px;
+    }
+  }
+  .about-main__subtitle-row {
+    margin-bottom: 8px;
+  }
+  .about-main__item-title {
+    font-size: 18px;
+    line-height: calc(26 / 18 * 100%);
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+  }
+  .about-main__item-text {
+    font-size: 14px;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  .about-main__item-button {
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0;
+  }
 }

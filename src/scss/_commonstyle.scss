@@ -4,6 +4,9 @@ html {
 a:hover {
   text-decoration: underline;
 }
+button:hover {
+  transform: scale(1.1);
+}
 .wrapper {
   overflow: hidden;
 }

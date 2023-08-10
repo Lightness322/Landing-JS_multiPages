@@ -8,7 +8,7 @@ const aboutTeamContainer = document.querySelector('.about-team__container')
 let aboutTeamCoor
 
 aboutTeamLeftArrow.addEventListener('click', () => {
-  if (parseInt(getComputedStyle(aboutTeamContainer).width) > 768) {
+  if (parseInt(getComputedStyle(aboutTeamContainer).width) > 992) {
     let itemWidth = getComputedStyle(aboutTeamItem).width
     let containerWidth = getComputedStyle(aboutTeamSlider).width
     let move =
@@ -29,7 +29,7 @@ aboutTeamLeftArrow.addEventListener('click', () => {
 })
 
 aboutTeamRightArrow.addEventListener('click', () => {
-  if (parseInt(getComputedStyle(aboutTeamContainer).width) > 768) {
+  if (parseInt(getComputedStyle(aboutTeamContainer).width) > 992) {
     let itemWidth = getComputedStyle(aboutTeamItem).width
     let containerWidth = getComputedStyle(aboutTeamSlider).width
     let move =

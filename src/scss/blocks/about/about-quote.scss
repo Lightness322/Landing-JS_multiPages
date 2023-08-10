@@ -42,3 +42,51 @@
   font-weight: 600;
   line-height: calc(36 / 24 * 100%);
 }
+@media (max-width: 992px) {
+  .about-quote__row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .about-quote__title {
+    flex: 1 1 100%;
+  }
+  .about-quote__subtitle {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 510px) {
+  .about-quote__title {
+    font-size: 4.5rem;
+  }
+  .about-quote__subtitle {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 375px) {
+  .about-quote__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .about-quote__row {
+    gap: 16px;
+  }
+  .about-quote__title {
+    font-size: 24px;
+    line-height: calc(34 / 24 * 100%);
+    letter-spacing: 0px;
+  }
+  .about-quote__subtitle {
+    font-size: 14px;
+    line-height: calc(24 / 14 * 100%);
+    letter-spacing: 0;
+  }
+  .about-quote__row {
+    &::before {
+      content: '';
+      top: -33.7rem;
+      left: -6.3rem;
+      height: 21.2rem;
+      width: 21.2rem;
+    }
+  }
+}

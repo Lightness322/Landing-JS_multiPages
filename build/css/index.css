@@ -115,6 +115,10 @@ a:hover {
   text-decoration: underline;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -1083,6 +1087,9 @@ a:hover {
   border-top: 2px solid rgb(126, 132, 146);
   border-left: 2px solid rgb(126, 132, 146);
 }
+.arrow-left:hover {
+  transform: rotate(-45deg);
+}
 
 .arrow-right {
   position: absolute;
@@ -1094,6 +1101,9 @@ a:hover {
   transform: rotate(45deg);
   border-top: 2px solid rgb(126, 132, 146);
   border-right: 2px solid rgb(126, 132, 146);
+}
+.arrow-right:hover {
+  transform: rotate(45deg);
 }
 
 .news__content-slider {
@@ -1549,6 +1559,7 @@ a:hover {
   height: 5rem;
   font-size: 0;
   z-index: 12;
+  margin-right: 3px;
 }
 
 .reviews__left-button {
