@@ -190,6 +190,22 @@ button:hover {
   background-color: black;
 }
 
+.left-button {
+  border: 1px solid rgb(206, 209, 216);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+}
+
+.right-button {
+  border: 1px solid;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  border-radius: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 993px;
@@ -1562,22 +1578,6 @@ button:hover {
   margin-right: 3px;
 }
 
-.reviews__left-button {
-  border: 1px solid rgb(206, 209, 216);
-  height: 5rem;
-  width: 5rem;
-  border-radius: 100%;
-  margin-right: 1.6rem;
-}
-
-.reviews__right-button {
-  border: 1px solid;
-  height: 5rem;
-  width: 5rem;
-  background-color: black;
-  border-radius: 100%;
-}
-
 .reviews__slider {
   width: 400%;
   display: inline-flex;
@@ -1908,6 +1908,7 @@ body.lock {
   border-radius: 100%;
   background: rgb(250, 117, 21);
   opacity: 13%;
+  z-index: -1;
   filter: blur(80px);
 }
 .footer__top::after {
@@ -1920,6 +1921,7 @@ body.lock {
   width: 52.5rem;
   border-radius: 100%;
   background: rgba(226, 248, 240, 0.7);
+  z-index: -1;
   filter: blur(80px);
 }
 
@@ -2087,6 +2089,9 @@ body.lock {
   }
 }
 @media (max-width: 576px) {
+  .footer-top__title {
+    font-size: 4.8rem;
+  }
   .footer-top__subtitle {
     padding-left: 43px;
   }

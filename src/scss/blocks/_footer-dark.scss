@@ -172,6 +172,9 @@
   }
 }
 @media (max-width: 576px) {
+  .footer-top__title {
+    font-size: 4.8rem;
+  }
   .footer-top__subtitle {
     padding-left: 43px;
     &::before {

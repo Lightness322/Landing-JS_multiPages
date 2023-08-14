@@ -12,6 +12,7 @@
     border-radius: 100%;
     background: rgba(250, 117, 21, 1);
     opacity: 13%;
+    z-index: -1;
     filter: blur(80px);
   }
   &::after {
@@ -24,6 +25,7 @@
     width: 52.5rem;
     border-radius: 100%;
     background: rgba(226, 248, 240, 0.7);
+    z-index: -1;
     filter: blur(80px);
   }
 }
@@ -183,6 +185,9 @@
   }
 }
 @media (max-width: 576px) {
+  .footer-top__title {
+    font-size: 4.8rem;
+  }
   .footer-top__subtitle {
     padding-left: 43px;
     &::before {

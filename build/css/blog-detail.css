@@ -160,6 +160,22 @@ button:hover {
   background-color: black;
 }
 
+.left-button {
+  border: 1px solid rgb(206, 209, 216);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+}
+
+.right-button {
+  border: 1px solid;
+  height: 5rem;
+  width: 5rem;
+  background-color: black;
+  border-radius: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 993px;
