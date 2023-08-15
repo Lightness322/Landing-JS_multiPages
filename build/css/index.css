@@ -1895,6 +1895,10 @@ body.lock {
     margin-left: 0;
   }
 }
+.footer {
+  overflow: hidden;
+}
+
 .footer__top {
   position: relative;
 }
