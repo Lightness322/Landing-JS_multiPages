@@ -4,6 +4,9 @@ const circleButton = document.querySelector(
 )
 const price = document.querySelectorAll('.pricing-plans__plan-price')
 
+const questionBtns = document.querySelectorAll('.pricing-questions__icon')
+const questAnswers = document.querySelectorAll('pricing-questions__item-answer')
+
 plansButton.addEventListener('click', () => {
   circleButton.classList.toggle('active')
   if (circleButton.classList.contains('active')) {
@@ -19,4 +22,13 @@ plansButton.addEventListener('click', () => {
         '$' + parseInt(elem.innerHTML.slice(1)) / 12 / 0.8 + '<span>/mo</span>'
     })
   }
+})
+
+questionBtns.forEach((elem) => {
+  elem.addEventListener('click', () => {
+    console.log(event.target.previousElementSibling.lastChild)
+    event.target.previousElementSibling.lastElementChild.classList.toggle(
+      'active'
+    )
+  })
 })
