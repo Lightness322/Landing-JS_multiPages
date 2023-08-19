@@ -6,6 +6,7 @@ const config = {
     about: './src/js/about.js',
     blog: './src/js/blog.js',
     pricing: './src/js/pricing.js',
+    contacts: './src/js/contacts.js',
   },
   output: {
     filename: '[name].bundle.js',

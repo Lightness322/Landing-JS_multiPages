@@ -1,0 +1,111 @@
+.companies__container {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  border-top: 1px solid rgba(237, 237, 237, 1);
+  border-bottom: 1px solid rgba(237, 237, 237, 1);
+}
+.companies__row {
+  display: flex;
+  gap: 3rem;
+}
+.companies__text-block {
+  flex-basis: calc(323 / 1200 * 100%);
+}
+.companies__number {
+  font-family: 'Inter';
+  font-size: 5.6rem;
+  font-weight: 600;
+  line-height: calc(67 / 56 * 100%);
+  letter-spacing: -2px;
+  margin-bottom: 1.6rem;
+}
+.companies__text {
+  @extend %heading_6;
+  font-weight: 500;
+  color: rgba(126, 132, 146, 1);
+}
+.companies__companies-block {
+  flex-basis: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.companies__img-block {
+  flex-basis: 160px;
+  text-align: center;
+  &::after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.companies__img {
+  vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+  .companies__companies-block {
+    flex-basis: 100%;
+  }
+  .companies__img-block:nth-child(7) {
+    flex-grow: 1;
+  }
+  .companies__img-block:nth-child(8) {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 676px) {
+  .companies__companies-block {
+    justify-content: space-around;
+    row-gap: 3rem;
+  }
+  .companies__img-block:nth-child(7) {
+    flex-grow: 0;
+  }
+  .companies__img-block:nth-child(8) {
+    flex-grow: 0;
+  }
+}
+@media (max-width: 511px) {
+  .companies__row {
+    flex-wrap: wrap;
+  }
+  .companies__text-block {
+    flex-grow: 1;
+  }
+  .companies__number {
+    font-size: 4.8rem;
+  }
+  .companies__text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .companies__row {
+    gap: 32px;
+  }
+  .companies__container {
+    border: none;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .companies__number {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    margin-bottom: 8px;
+  }
+  .companies__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .companies__companies-block {
+    justify-content: space-around;
+  }
+  .companies__img-block {
+    flex-basis: 124px;
+    height: 70px;
+  }
+}

@@ -26,9 +26,9 @@ plansButton.addEventListener('click', () => {
 
 questionBtns.forEach((elem) => {
   elem.addEventListener('click', () => {
-    console.log(event.target.previousElementSibling.lastChild)
-    event.target.previousElementSibling.lastElementChild.classList.toggle(
-      'active'
-    )
+    event.target
+      .closest('.pricing-questions__icon')
+      .previousElementSibling.lastElementChild.classList.toggle('active')
+    elem.classList.toggle('active')
   })
 })
