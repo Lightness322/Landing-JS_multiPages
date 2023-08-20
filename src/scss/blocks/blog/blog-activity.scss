@@ -190,6 +190,9 @@
   .blog-activity__drag-block {
     top: 92.72px;
   }
+  .blog-activity__desc {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .blog-activity__title {
@@ -212,6 +215,12 @@
   }
   .blog-activity__drag-block {
     top: 78.3px;
+  }
+  .blog-activity__item-title {
+    font-size: 2.4rem;
+  }
+  .blog-activity__item-subtitle {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 510px) {

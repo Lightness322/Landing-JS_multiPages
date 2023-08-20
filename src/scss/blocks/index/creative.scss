@@ -266,6 +266,16 @@
     width: 100%;
   }
 }
+@media (max-width: 390px) {
+  .creative__button {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 108px;
+    height: 36px;
+  }
+}
 @media (max-width: 381px) {
   .creative__sub-title {
     font-size: 9px;

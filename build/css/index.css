@@ -351,6 +351,7 @@ button:hover {
   .companies__container {
     padding-top: 28px;
     padding-bottom: 28px;
+    border: none;
   }
   .companies__number {
     font-size: 24px;
@@ -650,6 +651,16 @@ button:hover {
   }
   .creative__statistic {
     width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .creative__button {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 108px;
+    height: 36px;
   }
 }
 @media (max-width: 381px) {
@@ -1196,10 +1207,12 @@ button:hover {
   .arrow-left {
     height: 10px;
     width: 10px;
+    top: calc(50% - 5px);
   }
   .arrow-right {
     height: 10px;
     width: 10px;
+    top: calc(50% - 5px);
   }
 }
 @media (max-width: 705px) {
