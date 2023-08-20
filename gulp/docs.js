@@ -15,8 +15,6 @@ const changed = require('gulp-changed')
 const csso = require('gulp-csso')
 const htmlclean = require('gulp-htmlclean')
 const webp = require('gulp-webp')
-const webphtml = require('gulp-webp-html')
-const gulpwepbcss = require('gulp-webp-css')
 const shorthand = require('gulp-shorthand')
 
 const webpack = require('webpack-stream')
@@ -41,16 +39,15 @@ gulp.task('clean:docs', (done) => {
 
 gulp.task('html:docs', () => {
   return gulp
-    .src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
+    .src(['./src/html/*.html', '!./src/html/blocks/*.html'])
     .pipe(plumber(plumberConfig('html')))
-    .pipe(changed('./docs/'))
+    .pipe(changed('./docs/', { hasChanged: changed.compareContents }))
     .pipe(
       fileInclude({
         prefix: '@@',
         basepath: '@file',
       })
     )
-    .pipe(webphtml())
     .pipe(htmlclean())
     .pipe(gulp.dest('./docs/'))
 })
@@ -62,7 +59,6 @@ gulp.task('sass:docs', () => {
     .pipe(plumber(plumberConfig('scss')))
     .pipe(autoprefixer())
     .pipe(sassGlob())
-    .pipe(gulpwepbcss())
     .pipe(sass())
     .pipe(shorthand())
     .pipe(groupMedia())
