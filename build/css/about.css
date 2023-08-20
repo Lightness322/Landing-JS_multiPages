@@ -659,8 +659,7 @@ button:hover {
 }
 
 .about-team__item-link img:hover {
-  border: 1px solid;
-  border-radius: 100%;
+  transform: scale(1.2);
 }
 
 .about-team__text-block {
@@ -916,6 +915,12 @@ body.lock {
   height: 1px;
   width: 100%;
   background-color: black;
+}
+.header__li_underline:hover {
+  transform: scale(1.1);
+}
+.header__li_underline:hover a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

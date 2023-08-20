@@ -302,6 +302,10 @@ button:hover {
   line-height: 150%;
   color: rgb(126, 132, 146);
 }
+.blog-activity__button:hover {
+  transform: none;
+  color: black;
+}
 
 .blog-activity__slider-block {
   margin-left: calc((100% - 1200px) / 2);
@@ -619,6 +623,10 @@ button:hover {
   border: 1px solid rgb(206, 209, 216);
   border-radius: 100px;
 }
+.blog-articles__item-button:hover {
+  transform: none;
+  background-color: rgb(205, 207, 210);
+}
 
 @media (max-width: 1240px) {
   .blog-articles__slider-block {
@@ -737,6 +745,9 @@ button:hover {
   flex-direction: column;
   gap: 2.4rem;
   min-width: 335px;
+}
+.blog-items__item a {
+  text-decoration-color: white;
 }
 .blog-items__item:last-child {
   transform: translateY(-24.5967741935%);
@@ -909,6 +920,12 @@ body.lock {
   height: 1px;
   width: 100%;
   background-color: black;
+}
+.header__li_underline:hover {
+  transform: scale(1.1);
+}
+.header__li_underline:hover a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

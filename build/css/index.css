@@ -1867,6 +1867,12 @@ body.lock {
   width: 100%;
   background-color: black;
 }
+.header__li_underline:hover {
+  transform: scale(1.1);
+}
+.header__li_underline:hover a:hover {
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .header__button {

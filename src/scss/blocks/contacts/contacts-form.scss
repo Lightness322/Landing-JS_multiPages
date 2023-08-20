@@ -66,6 +66,9 @@ textarea {
 .form__name-row {
   display: flex;
   gap: 32px;
+  label {
+    flex: 1 1 50%;
+  }
 }
 .form__first-name {
   flex-grow: 1;

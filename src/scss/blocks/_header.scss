@@ -83,6 +83,13 @@ body.lock {
     width: 100%;
     background-color: black;
   }
+  &:hover {
+    transform: scale(1.1);
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 @media (max-width: 768px) {

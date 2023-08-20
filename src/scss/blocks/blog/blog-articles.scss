@@ -81,6 +81,10 @@
   text-align: center;
   border: 1px solid rgba(206, 209, 216, 1);
   border-radius: 100px;
+  &:hover {
+    transform: none;
+    background-color: rgb(205, 207, 210);
+  }
 }
 @media (max-width: 1240px) {
   .blog-articles__slider-block {

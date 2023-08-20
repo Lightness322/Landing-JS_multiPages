@@ -433,6 +433,9 @@ textarea {
   display: flex;
   gap: 32px;
 }
+.form__name-row label {
+  flex: 1 1 50%;
+}
 
 .form__first-name {
   flex-grow: 1;
@@ -779,6 +782,12 @@ body.lock {
   height: 1px;
   width: 100%;
   background-color: black;
+}
+.header__li_underline:hover {
+  transform: scale(1.1);
+}
+.header__li_underline:hover a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

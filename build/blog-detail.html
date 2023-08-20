@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-detail</title>
+    <link rel="stylesheet" href="./css/blog-detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="header__logo">
+        <a href="./index.html"><img src="./img/icons/logo.svg" alt="" /></a>
+      </div>
+      <button class="header__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li"><a href="./index.html">Home</a></li>
+          <li class="header__li"><a href="./about.html">About</a></li>
+          <li class="header__li"><a href="./blog.html">Blog</a></li>
+          <li class="header__li"><a href="./pricing.html">Pricing</a></li>
+          <li class="header__li header__li_underline">
+            <a href="./contacts.html">Contact Us -></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="blog-detail-content">
+  <div class="blog-detail-content__container container">
+    <div class="blog-detail-content__title">
+      How we perform long-running tasks using AWS services
+    </div>
+    <div class="blog-detail-content__post">
+      <div class="blog-detail-content__info-row-top">
+        <img
+          src="./img/blog-detail-content__icon.png"
+          alt=""
+          class="blog-detail-content__icon"
+        />
+        <div class="blog-detail-content__desc">
+          <div class="blog-detail-content__name">Renee Wells</div>
+          <div class="blog-detail-content__job">Product Designer, Quotient</div>
+        </div>
+        <div class="blog-detail-content__time">
+          10 min read November 10, 2023
+        </div>
+      </div>
+      <img
+        class="blog-detail-content__img"
+        src="./img/blog-detail-content__img.jpg"
+      />
+      <div class="blog-detail-content__text">
+        <p class="blog-detail-content__par">
+          Depending on the input, this can result in using a lot of processing
+          power and time. The whole process would take approximately 5 seconds
+          to return a result to the client. Keep in mind we’re talking about 1
+          item, a contact from a contact book. After a while, a new requirement
+          is added. Solution must support companies that manage their contacts
+          organized in files. We agreed to develop a web application that would
+          support upload of dataset files, like .csv. The new web application
+          should support third party integrations. Some of them are the ESP/CRM
+          services, like Mailchimp. User does not need to see the result
+          immediately. System can later notify the user about the result, when
+          the process finishes. This information is the key that we need to
+          leverage on when developing our solution. So here’s how we did it.
+        </p>
+        <div class="blog-detail-content__text-title">Initial approach</div>
+        <p class="blog-detail-content__par">
+          Our initial approach went like this: The web application would read a
+          .csv file line-by-line and submit an array of entries to the backend
+          REST API. Processing is in real time, immediately after the user makes
+          a request for the process to start, he expects a result. Another
+          approach is to apply vertical scaling to AWS architecture. Meaning we
+          used larger, more expensive instances that have more RAM and
+          processing power. This system worked well for smaller datasets, maybe
+          up to 5k entries, but for larger datasets multiple problems arose.
+          This solution is prone to failure due to long request time. Also,
+          because of some 3rd party services that aren’t optimized for large
+          scale loads or they don’t have batch endpoints. 3rd party services
+          also tend to protect their architecture from making a huge bill on
+          their end. The whole process was done in real-time. The request can
+          take a lot of time hanging in there while the backend would do all the
+          work and return the result to the client. The request was limited to
+          300 seconds (at time of writing the article) before AWS would cancel
+          it… Also I need to mention that the user has to wait a few minutes to
+          see the results. They can’t use the app during the process, which
+          makes for a bad user experience.
+        </p>
+      </div>
+      <div class="blog-detail-content__info-row-bot">
+        <img
+          class="blog-detail-content__img-bot"
+          src="./img/blog-detail-content__img-bot.png"
+        />
+        <div class="blog-detail-content__info-column">
+          <div class="blog-detail-content__links-row">
+            <a href=""
+              ><img
+                src="./img/icons/blog-detail-content__icon1.svg"
+                class="blog-detail-content__link-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="./img/icons/blog-detail-content__icon2.svg"
+                class="blog-detail-content__link-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="./img/icons/blog-detail-content__icon3.svg"
+                class="blog-detail-content__link-icon"
+            /></a>
+            <a href=""
+              ><img
+                src="./img/icons/blog-detail-content__icon4.svg"
+                class="blog-detail-content__link-icon"
+            /></a>
+            <div class="blog-detail-content__link-text">Share this article</div>
+          </div>
+          <div class="blog-detail-content__written">Written by</div>
+          <div class="blog-detail-content__name blog-detail-content__name_bot">
+            Renee Wells
+          </div>
+          <div class="blog-detail-content__job">Product Designer, Quotient</div>
+        </div>
+      </div>
+      <div class="blog-detail-content__desc-bot">
+        Skilled in React Native, iOS and backend, Toni has a demonstrated
+        knowledge of the information technology and services industry, with
+        plenty of hands-on experience to back it up.
+      </div>
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__top footer-top">
+      <div class="footer-top__row">
+        <div class="footer-top__text">
+          <h2 class="footer-top__title">Think beyond the wave</h2>
+          <h5 class="footer-top__subtitle line-subtitle">
+            Ask about Sans products, pricing, implementation, or anything else.
+            Our highly trained reps are standing by, ready to help
+          </h5>
+        </div>
+        <a href="./pricing.html"
+          ><button class="footer-top__button button">Try for free</button></a
+        >
+      </div>
+    </div>
+    <div class="footer__middle footer-middle">
+      <div class="footer-middle__logo-column">
+        <img class="footer-middle__logo" src="./img/icons/logo.svg" alt="" />
+        <div class="footer-middle__logo-text">
+          We built an elegant solution. Our team created a fully integrated
+          sales and marketing solution for SMBs
+        </div>
+      </div>
+      <div class="footer-middle992__block">
+        <div class="footer-middle992__icons-row">
+          <img
+            class="footer-middle992__icon"
+            src="./img/icons/facebook.svg"
+            alt=""
+          />
+          <img
+            class="footer-middle992__icon"
+            src="./img/icons/twitter.svg"
+            alt=""
+          />
+          <img
+            class="footer-middle992__icon"
+            src="./img/icons/inst.svg"
+            alt=""
+          />
+          <img class="footer-middle992__icon" src="./img/icons/in.svg" alt="" />
+        </div>
+        <div class="footer-middle992__links-row">
+          <div class="footer-middle992__link">
+            <a href="">Privacy Policy</a>
+          </div>
+          <div class="footer-middle992__link">
+            <a href="">Terms & Conditions</a>
+          </div>
+          <div class="footer-middle992__link">
+            <a href="">Support</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-middle__row">
+        <div class="footer-middle__column">
+          <div class="footer-middle__column-title">Company</div>
+          <div class="footer-middle__column-text">
+            <a href="./about.html">About</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="./pricing.html">Pricing</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Jobs</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="./blog.html">Blog</a>
+          </div>
+        </div>
+        <div class="footer-middle__column">
+          <div class="footer-middle__column-title">Product</div>
+          <div class="footer-middle__column-text">
+            <a href="">Sales Software</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Marketplace</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Terms & Conditions</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-middle__column">
+          <div class="footer-middle__column-title">Discover</div>
+          <div class="footer-middle__column-text">
+            <a href="">CRM Comparision</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Partner Program</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">What is CRM</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Resource</a>
+          </div>
+        </div>
+        <div class="footer-middle__column">
+          <div class="footer-middle__column-title">Help Center</div>
+          <div class="footer-middle__column-text">
+            <a href="">Community</a>
+          </div>
+          <div class="footer-middle__column-text">
+            <a href="">Knowledge Base</a>
+          </div>
+          <div class="footer-middle__column-text"><a href="">Academy</a></div>
+          <div class="footer-middle__column-text"><a href="">Support</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom footer-bottom">
+      <div class="footer-bottom__text">
+        © Copyright 2023 All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="./js/header.bundle.js"></script>
+  </body>
+</html>
