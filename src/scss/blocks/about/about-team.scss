@@ -1,11 +1,9 @@
-.about-team {
-}
 .about-team__container {
   padding-top: 16rem;
   padding-bottom: 16rem;
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 52.5rem;
     height: 52.5rem;
@@ -17,10 +15,9 @@
     filter: blur(70px);
   }
 }
-.container {
-}
+
 .about-team__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -29,7 +26,7 @@
   margin-bottom: 2.4rem;
 }
 .about-team__subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 500;
   color: rgba(126, 132, 146, 1);
@@ -98,14 +95,14 @@
   justify-content: space-between;
 }
 .about-team__item-name {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2.4rem;
   font-weight: 600;
   line-height: calc(36 / 24 * 100%);
   margin-bottom: 0.8rem;
 }
 .about-team__item-job {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(27 / 18 * 100%);
@@ -127,7 +124,7 @@
 }
 .about-team__first-column {
   flex-basis: calc(626 / 1200 * 100%);
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -137,7 +134,7 @@
   flex-basis: calc(506 / 1200 * 100%);
 }
 .about-team__subtext {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(32 / 18 * 100%);
@@ -145,7 +142,7 @@
   margin-bottom: 2.4rem;
 }
 .about-team__link {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 600;
   line-height: calc(24 / 16 * 100%);
@@ -277,7 +274,7 @@
   }
   .about-team__container {
     &::after {
-      content: '';
+      content: "";
       width: 440px;
       height: 440px;
       top: 96px;

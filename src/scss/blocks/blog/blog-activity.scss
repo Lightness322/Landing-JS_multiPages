@@ -1,11 +1,9 @@
-.blog-activity {
-}
 .blog-activity__container {
   flex-direction: column;
   padding-top: 9.5rem;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -7.4rem;
@@ -17,7 +15,7 @@
     filter: blur(70px);
   }
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: -38rem;
@@ -30,10 +28,8 @@
     filter: blur(70px);
   }
 }
-.container {
-}
 .blog-activity__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 7.2rem;
   font-weight: 700;
   line-height: calc(86 / 72 * 100%);
@@ -41,15 +37,13 @@
   margin-bottom: 5.3rem;
 }
 .blog-activity__subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 3.2rem;
   font-weight: 600;
   line-height: calc(42 / 32 * 100%);
   letter-spacing: -1px;
   margin-bottom: 12.8rem;
   max-width: 774px;
-}
-.line-subtitle {
 }
 .blog-activity__buttons {
   display: flex;
@@ -59,7 +53,7 @@
 }
 .blog-activity__button {
   flex: 0 0 auto;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 500;
   line-height: calc(24 / 16 * 100%);
@@ -115,7 +109,7 @@
   margin-bottom: 2.4rem;
 }
 .blog-activity__published {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(21 / 14 * 100%);
@@ -123,7 +117,7 @@
   color: rgba(126, 132, 146, 1);
 }
 .blog-activity__by {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(21 / 14 * 100%);
@@ -131,7 +125,7 @@
   color: rgba(126, 132, 146, 1);
 }
 .blog-activity__item-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 3.2rem;
   font-weight: 700;
   line-height: calc(40 / 32 * 100%);
@@ -139,7 +133,7 @@
   margin-bottom: 16px;
 }
 .blog-activity__item-subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2rem;
   font-weight: 500;
   line-height: calc(30 / 20 * 100%);
@@ -279,14 +273,14 @@
   .blog-activity__container {
     gap: 56px;
     &::before {
-      content: '';
+      content: "";
       top: -97px;
       left: -71px;
       height: 228px;
       width: 228px;
     }
     &::after {
-      content: '';
+      content: "";
       top: 95px;
       right: -117px;
       height: 197px;

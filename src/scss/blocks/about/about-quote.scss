@@ -1,19 +1,16 @@
-.about-quote {
-}
 .about-quote__container {
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
   border-top: 1px solid rgba(237, 237, 237, 1);
   border-bottom: 1px solid rgba(237, 237, 237, 1);
 }
-.container {
-}
+
 .about-quote__row {
   display: flex;
   justify-content: space-between;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -43.4rem;
@@ -29,7 +26,7 @@
 }
 .about-quote__title {
   flex-basis: calc(480 / 1200 * 100%);
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -37,7 +34,7 @@
 }
 .about-quote__subtitle {
   flex-basis: calc(522 / 1200 * 100%);
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2.4rem;
   font-weight: 600;
   line-height: calc(36 / 24 * 100%);
@@ -82,7 +79,7 @@
   }
   .about-quote__row {
     &::before {
-      content: '';
+      content: "";
       top: -33.7rem;
       left: -6.3rem;
       height: 21.2rem;

@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -7.4rem;
@@ -24,7 +24,7 @@
     filter: blur(70px);
   }
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 8rem;
@@ -42,7 +42,7 @@
   flex-basis: 61.7rem;
 }
 .creative__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 8rem;
   font-weight: 700;
   line-height: calc(96 / 80 * 100%);
@@ -62,13 +62,11 @@
 .creative__input {
   border-bottom: 1px solid rgba(206, 209, 216, 1);
   width: 28rem;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: calc(24 / 16 * 100%);
   color: rgba(126, 132, 146, 1);
-}
-.creative__button {
 }
 .creative__img-column {
   flex-grow: 1;
@@ -87,7 +85,7 @@
   box-shadow: 20px 40px 80px 0px rgba(89, 96, 135, 0.12);
 }
 .creative__main-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2rem;
   font-weight: 700;
   line-height: calc(30 / 20 * 100%);
@@ -108,14 +106,12 @@
   box-shadow: 20px 40px 80px 0px rgba(45, 51, 81, 0.12);
 }
 .creative__sub-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 700;
   line-height: calc(30 / 20 * 100%);
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
-}
-.creative__sub-img {
 }
 .creative__statistic {
   padding: 2rem 2.8rem;
@@ -133,7 +129,7 @@
   flex-direction: column;
 }
 .creative__statistic-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 600;
   line-height: calc(20 / 14 * 100%);
@@ -141,7 +137,7 @@
   margin-bottom: 0.4rem;
 }
 .creative__statistic-price {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2rem;
   font-weight: 700;
   line-height: calc(26 / 20 * 100%);
@@ -149,7 +145,7 @@
   color: rgba(255, 255, 255, 1);
 }
 .creative__statistic-up {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 600;
   line-height: calc(20 / 14 * 100%);
@@ -157,19 +153,19 @@
   padding-left: 1.6rem;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     height: 100%;
     width: 1.2rem;
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url('../img/icons/creative__statistic-up.svg');
+    background-image: url("../img/icons/creative__statistic-up.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 .creative__statistic-down {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 600;
   line-height: calc(20 / 14 * 100%);
@@ -177,19 +173,19 @@
   padding-left: 1.6rem;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     height: 100%;
     width: 1.2rem;
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url('../img/icons/creative__statistic-down.svg');
+    background-image: url("../img/icons/creative__statistic-down.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 .creative__statistic-time {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(22 / 14 * 100%);
@@ -217,12 +213,12 @@
   }
   .creative__row {
     &::before {
-      content: '';
+      content: "";
       height: 40rem;
       width: 40rem;
     }
     &::after {
-      content: '';
+      content: "";
       height: 35rem;
       width: 35rem;
     }
@@ -268,7 +264,7 @@
 }
 @media (max-width: 390px) {
   .creative__button {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
@@ -293,14 +289,14 @@
   .creative__row {
     gap: 56px;
     &::before {
-      content: '';
+      content: "";
       top: -97px;
       left: -71px;
       height: 228px;
       width: 228px;
     }
     &::after {
-      content: '';
+      content: "";
       top: 95px;
       right: -117px;
       height: 197px;
@@ -321,8 +317,6 @@
   .creative__container {
     padding-top: 32px;
     padding-bottom: 56.25px;
-  }
-  .creative__input-block {
   }
   .creative__input {
     font-size: 14px;

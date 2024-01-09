@@ -4,7 +4,7 @@
   text-align: center;
 }
 .news__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -31,7 +31,7 @@
   top: 25%;
   z-index: 12;
   ::before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 100%;
   }
@@ -89,19 +89,15 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.6rem;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 400;
   line-height: calc(21 / 14 * 100%);
   color: rgba(126, 132, 146, 1);
 }
-.news__published {
-}
-.news__by {
-}
 .news__topic {
   text-align: start;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 3.2rem;
   font-weight: 600;
   line-height: calc(48 / 32 * 100%);

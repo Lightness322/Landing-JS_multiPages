@@ -1,11 +1,9 @@
-.relationships {
-}
 .relationships__container {
   padding-top: 16rem;
   padding-bottom: 10rem;
 }
 .relationships__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -104,8 +102,6 @@
   .relationships__item-title {
     font-size: 2.4rem;
     margin-bottom: 1rem;
-  }
-  .relationships__item-text {
   }
 }
 @media (max-width: 375px) {

@@ -36,7 +36,6 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "air-datepicker": "^3.4.0",
-    "swiper": "^10.0.4"
+    "air-datepicker": "^3.4.0"
   }
 }

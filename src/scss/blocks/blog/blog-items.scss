@@ -24,17 +24,15 @@
     transform: translateY(calc(-244 / 992 * 100%));
   }
 }
-.blog-items__img {
-}
 .blog-items__item-title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 4rem;
   font-weight: 600;
   line-height: calc(48 / 40 * 100%);
   color: rgba(255, 255, 255, 1);
 }
 .blog-items__item-subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(32 / 18 * 100%);

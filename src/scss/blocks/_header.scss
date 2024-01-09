@@ -1,8 +1,7 @@
 body.lock {
   overflow: hidden;
 }
-.header {
-}
+
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -10,8 +9,7 @@ body.lock {
   padding-top: 2.6rem;
   padding-bottom: 2.2rem;
 }
-.header__logo {
-}
+
 .header__nav {
   display: flex;
   transition: all 0.2s;
@@ -75,7 +73,7 @@ body.lock {
   position: relative;
   margin-left: 3.6rem;
   &::after {
-    content: '';
+    content: "";
     left: 0;
     bottom: -6px;
     position: absolute;

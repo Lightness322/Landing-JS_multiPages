@@ -4,7 +4,7 @@
 .footer__top {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -6.9rem;
@@ -17,7 +17,7 @@
     filter: blur(80px);
   }
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 12.5rem;
@@ -30,8 +30,7 @@
     filter: blur(80px);
   }
 }
-.footer-top {
-}
+
 .footer-top__row {
   display: flex;
   justify-content: space-between;
@@ -54,8 +53,7 @@
   max-width: 643px;
   font-weight: 600;
 }
-.footer-top__button {
-}
+
 .footer__middle {
   padding-top: 7.6rem;
   padding-bottom: 7.9rem;
@@ -101,8 +99,7 @@
   padding-top: 4.6rem;
   padding-bottom: 5.9rem;
 }
-.footer-bottom {
-}
+
 .footer-bottom__text {
   @extend %body_large;
   font-weight: 400;
@@ -128,7 +125,7 @@
   justify-content: space-around;
 }
 .footer-middle992__link {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: calc(24 / 16 * 100%);

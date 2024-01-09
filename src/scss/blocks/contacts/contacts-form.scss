@@ -1,5 +1,3 @@
-.contacts-form {
-}
 .contacts-form__container {
   padding-top: 12rem;
   padding-bottom: 16rem;
@@ -13,14 +11,14 @@
   border: 1px solid rgba(206, 209, 216, 1);
 }
 .contacts-form__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 3.6rem;
   font-weight: 600;
   line-height: calc(44 / 36 * 100%);
   margin-bottom: 20px;
 }
 .contacts-form__subtitle {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: calc(30 / 18 * 100%);
@@ -33,7 +31,7 @@
   }
 }
 label {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 500;
   line-height: calc(20 / 14 * 100%);
@@ -56,8 +54,6 @@ textarea {
   border-radius: 8px;
   margin-bottom: 8px;
 }
-.contacts-form__form {
-}
 .form {
   display: flex;
   flex-direction: column;
@@ -77,7 +73,7 @@ textarea {
   flex-grow: 1;
 }
 .form__button {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 700;
   line-height: calc(24 / 16 * 100%);

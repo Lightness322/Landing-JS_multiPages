@@ -1,5 +1,3 @@
-.increase {
-}
 .increase__container {
   padding-top: 16rem;
   padding-bottom: 9.4rem;
@@ -34,7 +32,7 @@
   flex-basis: 557px;
 }
 .increase__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 5.6rem;
   font-weight: 600;
   line-height: calc(67 / 56 * 100%);
@@ -60,14 +58,14 @@
   max-width: 393px;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     left: 0;
     top: calc(50% - 10px);
     display: block;
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('../img/icons/increase__icon.svg');
+    background-image: url("../img/icons/increase__icon.svg");
   }
 }
 @media (max-width: 476px) {
